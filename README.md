@@ -145,11 +145,11 @@ Stephen Herget
 
 - _herget06@gmail.com_
 - _[@twitter_handle](https://twitter.com/twitter_handle)_
-- _(https://www.linkedin.com/in/stephen-a-herget-50522942/)_
+- _https://www.linkedin.com/in/stephen-a-herget-50522942/_
 
 Project Link: 
 
-- _[https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)_
+- _https://github.com/github_username/repo_name_
 
 <br>
 
