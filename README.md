@@ -46,6 +46,10 @@ Consolidate all of your FANTASY leagues into one dashboard
 ### Wireframes
 ***
 
+![FanHub - Welcome Page](https://user-images.githubusercontent.com/82413689/131147415-72fb2bd3-07bc-4f3d-babb-09ca58444ff4.png)
+
+<br>
+
 <details>
     
 ![FanHub](https://user-images.githubusercontent.com/82413689/131126412-663b8952-8b81-44ab-ab4e-a39c43e3a5f0.png)
@@ -57,7 +61,7 @@ Consolidate all of your FANTASY leagues into one dashboard
 ### Component Tree
 ***
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+![FanHub_CompTree](https://user-images.githubusercontent.com/82413689/131147057-7e55363d-1f9c-49e3-b48f-734154a07135.png)
 
 <br>
 
