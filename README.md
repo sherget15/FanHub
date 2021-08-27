@@ -1,9 +1,9 @@
 # FanHub     
-_www.fanhub.com_
+_www.FanHub.com_
 
 Consolidate all of your FANTASY leagues into one dashboard
 
-### MVP
+### MVP REQUIREMENTS
 ***
 
 - _RESTful JSON API_
@@ -27,19 +27,13 @@ Consolidate all of your FANTASY leagues into one dashboard
 ### Libraries and Dependencies
 ***
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
-
-<br>
-
-### Client (Front End)
-***
-
+|     Library      | Description       |
+| :--------------: | :-----------------|
+|      React       |  _front-end app_  |
+|   React Router   |      _routes_     |
+| React SemanticUI | _styling package_ |
+|     Express      |     _database_    |
+|  Express Router  | _back-end routes_ |
 
 <br>
 
@@ -68,8 +62,6 @@ Consolidate all of your FANTASY leagues into one dashboard
 ### Component Architecture
 ***
 
-> Define your React components. Should be a reflection of directory/file tree. 
-
 ``` structure
 
 src
@@ -77,12 +69,22 @@ src
       |__ fonts
       |__ graphics
       |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
-      |__ LandingPage.jsx (main container)
-
+      |__ Layout.jsx 
+      |__ Signup.jsx
+      |__ Login.jsx
+      |__ WelcomePage.jsx (main container)
+      |__ NavBar.jsx
+      |__ UserProfile.jsx
+      |__ UserLandingPage.jsx
+      |__ CreateTeam.jsx
+      |__ UserTeam.jsx
+      |__ EditTeam.jsx
+      |__ Footer.jsx
 |__ services/
+      |__ api-config.js
+      |__ teams.js
+      |__players.js
 
 ```
 
@@ -91,26 +93,22 @@ src
 ### Timeframes
 ***
 
-|    Component     | Priority | Estimated Time | Time Invested | Actual Time  |
-|------------------|----------|----------------|---------------|--------------|
-| Project Proposal |   High   |      8hrs      |   8hrs        |   __hrs      |
-| JS               |   High   |      4hrs      |   2hrs        |   __hrs      |
-| JS & AT          |   High   |      4hrs      |   6hrs        |   __hrs      |
-| JS               |   High   |      4hrs      |   4hrs        |   __hrs      |
-| Styling          |   High   |      4hrs      |   4hrs        |   __hrs      |
-| Fine tuning      |   High   |      8hrs      |   8hrs        |   __hrs      |
-| Blockers         |   High   |      8hrs      |   4hrs        |   __hrs      |
-|     Total        |   High   |     40hrs      |  36hrs        |   __hrs      |
+|        Component        | Priority | Estimated Time | Time Invested | Actual Time  |
+|-------------------------|----------|----------------|---------------|--------------|
+|     Project Proposal    |   High   |      8hrs      |   8hrs        |     __hrs    |
+|   Database/Migrations   |   High   |      2hrs      |   8hrs        |     __hrs    |
+|    Controllers/Models   |   High   |      2hrs      |   8hrs        |     __hrs    |
+|    Container & Layout   |   High   |      2hrs      |   2hrs        |     __hrs    |
+|       Signup/Login      |   High   |      2hrs      |   6hrs        |     __hrs    |
+|     Welcome/Nav/Foot    |   High   |      4hrs      |   4hrs        |     __hrs    |
+|    Profile/LandingPg    |   High   |      4hrs      |   4hrs        |     __hrs    |
+| Create/Edit/Delete Team |   High   |      8hrs      |   8hrs        |     __hrs    |
+|         Blockers        |   High   |      8hrs      |   4hrs        |     __hrs    |
+|          Total          |   High   |     40hrs      |  36hrs        |     __hrs    |
 
 <br>
 
-### Server (Back End)
-***
-
-
-<br>
-
-#### ERD Model
+### ERD Model
 ***
 
 ![FanHub](https://user-images.githubusercontent.com/82413689/131028325-f52d1f86-7c02-4c2b-89b1-d2ead0c853e4.png)
@@ -161,13 +159,3 @@ Project Link:
 * []()
 * []()
 * []()
-
-
-
-
-
-
-
-
-
-
