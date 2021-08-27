@@ -46,10 +46,11 @@ Consolidate all of your FANTASY leagues into one dashboard
 ### Wireframes
 ***
 
-![Dummy Link](url)
-
-- Desktop Landing
-
+<details>
+    
+![FanHub](https://user-images.githubusercontent.com/82413689/131126412-663b8952-8b81-44ab-ab4e-a39c43e3a5f0.png)
+    
+</details>
 
 <br>
 
