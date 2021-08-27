@@ -57,8 +57,6 @@ Consolidate all of your FANTASY leagues into one dashboard
 ### Component Tree
 ***
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
 [Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
 <br>
@@ -89,17 +87,16 @@ src
 ### Timeframes
 ***
 
-|    Component     | Priority | Estimated Time | Time Invested | Actual Time |
-|------------------|----------|----------------|---------------|-------------|
-| Project Proposal |   High   |      8hrs      |   8hrs        |   8hrs      |
-| JS               |   High   |      4hrs      |   2hrs        |   2hrs      |
-| JS & AT          |   High   |      4hrs      |   6hrs        |   6hrs      |
-| JS               |   High   |      4hrs      |   4hrs        |   4hrs      |
-| Styling          |   High   |      4hrs      |   4hrs        |   4hrs      |
-| Fine tuning      |   High   |      8hrs      |   8hrs        |   8hrs      |
-| Blockers         |   High   |      8hrs      |   4hrs        |   4hrs      |
-|     Total        |   High   |     40hrs      |  36hrs        |  36hrs      |
-
+|    Component     | Priority | Estimated Time | Time Invested | Actual Time  |
+|------------------|----------|----------------|---------------|--------------|
+| Project Proposal |   High   |      8hrs      |   8hrs        |   __hrs      |
+| JS               |   High   |      4hrs      |   2hrs        |   __hrs      |
+| JS & AT          |   High   |      4hrs      |   6hrs        |   __hrs      |
+| JS               |   High   |      4hrs      |   4hrs        |   __hrs      |
+| Styling          |   High   |      4hrs      |   4hrs        |   __hrs      |
+| Fine tuning      |   High   |      8hrs      |   8hrs        |   __hrs      |
+| Blockers         |   High   |      8hrs      |   4hrs        |   __hrs      |
+|     Total        |   High   |     40hrs      |  36hrs        |   __hrs      |
 
 <br>
 
@@ -122,8 +119,6 @@ src
 - _CSS style effects & transitions_
 - _Pop-up footer_
 - _Authorization_
-- _Idea 4_
-- _Idea 5_
 
 <br>
 
