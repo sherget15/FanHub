@@ -11,7 +11,7 @@ class PlayersController < ApplicationController
   # GET /players/1
   def add_to_team 
     @player = Team.find(params[:team_id])
-    @player.teams << @flavor 
+    @player.teams << @team  
 
     render json: @team, include: :players
   end
