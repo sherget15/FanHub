@@ -4,8 +4,6 @@ class CreatePlayers < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :team_name
       t.string :position
-      t.timestamp :created_at
-      t.timestamp :updated_at
 
       t.timestamps
     end
