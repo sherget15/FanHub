@@ -19,3 +19,8 @@ export const putTeam = async (id, teamData) => {
   const res = await api.put(`/teams/${id}`, { team: teamData });
   return res.data;
 };
+
+export const deleteTeam = async (id) => {
+  const res = await api.delete(`/teams/${id}`);
+  return res;
+};
