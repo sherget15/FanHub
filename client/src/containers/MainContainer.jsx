@@ -52,7 +52,31 @@ export default function MainContainer(props) {
     setTeams((prevState) => prevState.filter((team) => team.id !== id));
   };
 
-  
+  return (
+    <div>
+      <Switch>
+        <Route path='/players'>
+          <Players players={players} />
+        </Route>
+        <Route path='/teams/:id/edit'>
+          <TeamEdit teams={teams} handleUpdate={handleUpdate} />
+        </Route>
+        <Route path='/teams/new'>
+          <TeamCreate handleCreate={handleCreate} />
+        </Route>
+        <Route path='/teams/:id'>
+          <TeamDetail teams={teams} />
+        </Route>
+        <Route path='/teams'>
+          <Teams
+            teams={teams}
+            handleDelete={handleDelete}
+            currentUser={currentUser}
+          />
+        </Route>
+      </Switch>
+    </div>
+  );
 
 
 
