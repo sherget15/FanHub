@@ -46,4 +46,20 @@ export default function MainContainer(props) {
     );
     history.push('/teams');
   };
+
+  const handleDelete = async (id) => {
+    await deleteTeam(id);
+    setTeams((prevState) => prevState.filter((team) => team.id !== id));
+  };
+
+  
+
+
+
+
+
+
+
+
+
 }
