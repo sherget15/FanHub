@@ -77,13 +77,4 @@ export default function MainContainer(props) {
       </Switch>
     </div>
   );
-
-
-
-
-
-
-
-
-
 }
