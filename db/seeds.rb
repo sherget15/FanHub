@@ -15,7 +15,7 @@ User.destroy_all
 puts "#{User.count} users created"
 
 10.times do 
-  Team.create!(name: Faker::Team.dish, user: @admin)
+  Team.create!(name: Faker::Team.name, user: @admin)
 end
 
 puts "#{Team.count} teams created"
