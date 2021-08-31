@@ -28,11 +28,11 @@ export default function TeamEdit(props) {
 
   return (
     <form
-    onSubmit={(e) => {
-				e.preventDefault();
-				handleUpdate(id, formData);
-			}}
-      >
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleUpdate(id, formData);
+      }}
+    >
       <label>
         Name:
         <input 

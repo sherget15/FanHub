@@ -6,6 +6,7 @@ export default function Login(props) {
     username: '',
     password: '',
   });
+
   const { handleLogin } = props;
 
   const handleChange = (e) => {
@@ -25,7 +26,8 @@ export default function Login(props) {
     >
       <h3>Login</h3>
       <label>
-        Username:
+        Username: &nbsp;
+
         <input
           type='text'
           name='username'
@@ -33,9 +35,12 @@ export default function Login(props) {
           onChange={handleChange}
         />
       </label>
+
       <br />
+      <br />
+      
       <label>
-        Password:
+        Password: &nbsp;
         <input
           type='password'
           name='password'
@@ -43,8 +48,14 @@ export default function Login(props) {
           onChange={handleChange}
         />
       </label>
+
       <br />
+      <br />
+
       <Link to='/register'>Register</Link>
+
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      
       <button>Submit</button>
     </form>
   );

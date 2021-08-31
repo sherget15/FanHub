@@ -4,7 +4,7 @@ export default function Register(props) {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
-    password: '',
+    password: ''
   });
   const { handleRegister } = props;
 
@@ -24,36 +24,42 @@ export default function Register(props) {
       }}
     >
       <h3>Register</h3>
-      <label>
-        Username:
+
+      <label>Username:</label>
+
         <input
           type='text'
           name='username'
           value={formData.username}
           onChange={handleChange}
         />
-      </label>
+      
       <br />
-      <label>
-        Email:
+
+      <label>Email:</label>
+
         <input
-          type='text'
+          type='email'
           name='email'
           value={formData.email}
           onChange={handleChange}
         />
-      </label>
+
       <br />
-      <label>
-        Password:
+
+      <label>Password:</label>
+
         <input
           type='password'
           name='password'
           value={formData.password}
           onChange={handleChange}
+          minLength={6}
+          onError="You password must be at least characters"
         />
-      </label>
+      
       <br />
+
       <button>Submit</button>
     </form>
   );
