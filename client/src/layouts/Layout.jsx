@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
+  
   return (
     <header>
-      <h1>FanHub</h1>
+      <Link className='home' to='/'>FanHub</Link>
       {currentUser ? (
         <div>
           <p>{currentUser.username}</p>
