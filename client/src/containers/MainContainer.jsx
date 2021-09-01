@@ -65,7 +65,7 @@ export default function MainContainer(props) {
           <TeamCreate handleCreate={handleCreate} />
         </Route>
         <Route path='/teams/:id'>
-          <TeamDetail teams={teams} />
+          <TeamDetail players={players} />
         </Route>
         <Route path='/teams'>
           <Teams

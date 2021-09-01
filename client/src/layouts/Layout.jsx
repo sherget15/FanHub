@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
   return (
+    <div>
     <header>
       <h1>FanHub</h1>
       {currentUser ? (
@@ -13,6 +14,7 @@ export default function Layout(props) {
       ) : (
         <Link to='/login'>Login/Register</Link>
       )}
+    </header>
       <hr />
       {currentUser && (
         <div>
@@ -21,6 +23,6 @@ export default function Layout(props) {
         </div>
       )}
       {props.children}
-    </header>
+    </div>
   );
 }

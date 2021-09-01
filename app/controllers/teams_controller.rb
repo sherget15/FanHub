@@ -1,6 +1,6 @@
 class TeamsController < ApplicationController
   before_action :set_team, only: [:show, :update, :destroy]
-  # before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /teams
   def index
@@ -11,7 +11,7 @@ class TeamsController < ApplicationController
 
   # GET /teams/1
   def show
-    render json: @team
+    render json: @team, include: :players
   end
 
   # POST /teams
@@ -20,7 +20,7 @@ class TeamsController < ApplicationController
     @team.user = @current_user
 
     if @team.save
-      render json: @team, status: :created 
+      render json: @team, include: :players, status: :created 
     else
       render json: @team.errors, status: :unprocessable_entity
     end
@@ -29,7 +29,7 @@ class TeamsController < ApplicationController
   # PATCH/PUT /teams/1
   def update
     if @team.update(team_params)
-      render json: @team
+      render json: @team, include: :players
     else
       render json: @team.errors, status: :unprocessable_entity
     end
