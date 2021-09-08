@@ -7,20 +7,23 @@ export default function Teams(props) {
     <div>
       <h3>Teams</h3>
       {teams.map((team) => (
+
         <div key={team.id}>
-          <Link to={`/teams/${team.id}`}>
-            <p>{team.name}</p>
-          </Link>
+          
+          <Link to={`/teams/${team.id}`}><p>{team.name}</p></Link>
           {currentUser?.id === team.user_id && (
+
             <div>
-              <Link to={`/teams/${team.id}/edit`}>
-                <button>Edit</button>
-              </Link>
+              <br></br>
+              <Link to={`/teams/${team.id}/edit`}><button>Edit</button></Link>
               <button onClick={() => handleDelete(team.id)}>Delete</button>
+              <br></br>
             </div>
           )}
+
         </div>
       ))}
+
       <Link to='/teams/new'><button>Create</button></Link>
     </div>
   );

@@ -4,25 +4,34 @@ export default function Layout(props) {
   const { currentUser, handleLogout } = props;
   return (
     <div>
-    <header>
-      <h1>FanHub</h1>
-      {currentUser ? (
+      
+      <header>
+      <Link to='/'><h1>FanHub</h1></Link>
+        {currentUser ? (
         <div>
-          <p>{currentUser.username}</p>
-          <button onClick={handleLogout}>Logout</button>
+            <p>{currentUser.username} &nbsp; <button onClick={handleLogout}>Logout</button></p>
         </div>
       ) : (
         <Link to='/login'>Login/Register</Link>
       )}
-    </header>
+      </header>
       <hr />
+
       {currentUser && (
         <div>
+        <br></br>
           <Link to='/teams'>Teams</Link>
+          <br></br>
+          <br></br>
           <Link to='/players'>Players</Link>
+          <br></br>
+          <br></br>
         </div>
       )}
       {props.children}
+      
     </div>
   );
 }
+
+
