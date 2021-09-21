@@ -1,5 +1,6 @@
 import React from 'react';
-import LiveBar from './components/livebar/LiveBar';
+import Layout from '../../components/layout/Layout';
+import LiveBar from '../../components/livebar/LiveBar';
 
 export default function HomePage() {
   return (
