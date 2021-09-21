@@ -1,5 +1,4 @@
 import React from 'react'
-import './LiveBar.css'  
 
 export default function LiveBar() {
   return (

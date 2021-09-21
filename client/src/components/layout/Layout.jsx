@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import Nav from '../nav/Nav';
 
 export default function Layout(props) {
-  const { currentUser, handleLogout } = props;
+  const { currentUser } = props;
+
   return (
     <div>
       <Nav />
@@ -11,6 +12,9 @@ export default function Layout(props) {
         <div>
         <br></br>
           <Link to='/teams'>Teams</Link>
+          <br></br>
+          <br></br>
+          <p>{currentUser?.teams?.players}</p>
           <br></br>
           <br></br>
           <Link to='/players'>Players</Link>

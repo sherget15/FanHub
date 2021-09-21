@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 export default function Nav(props) {
-    const { currentUser, handleLogOut } = props;
+    const { currentUser, handleLogout } = props;
+
 
     return (
         <Nav>
