@@ -5,12 +5,25 @@
     "activityBar.inactiveForeground": "#5A279D",
     "activityBarBadge.foreground": "#330018",
     "activityBarBadge.background": "#FF79B7",
-    "statusBar.foreground": "#FFE5F9",
-    "statusBar.background": "#9F2F86",
-    "statusBarItem.hoverBackground": "#732A4A",
-    "statusBarItem.remoteForeground": "#FFD3D5",
-    "statusBarItem.remoteBackground": "#A43A41",
-    "statusBar.debuggingForeground": "#2D0023",
-    "statusBar.debuggingBackground": "#D666BD"
-  }
+    "statusBar.foreground": "#FFD2A6",
+    "statusBar.background": "#8B4F15",
+    "statusBarItem.hoverBackground": "#51470E",
+    "statusBarItem.remoteForeground": "#D6F381",
+    "statusBarItem.remoteBackground": "#536F00",
+    "statusBar.debuggingForeground": "#000000",
+    "statusBar.debuggingBackground": "#C1864B"
+  },
+  "workbench.panel.opensMaximized": "never",
+  "workbench.startupEditor": "none",
+  "workbench.preferredLightColorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.highlightModifiedTabs": true,
+  "zenMode.fullScreen": false,
+  "zenMode.restore": false,
+  "zenMode.hideTabs": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideActivityBar": false,
+  "zenMode.silentNotifications": false
 }

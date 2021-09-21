@@ -32,10 +32,10 @@ export default function TeamDetail(props) {
   return (
     <div>
       <h3>{teamItem?.name}</h3>
-      {teamItem?.players.map((player) => (
+      {teamItem?.players?.map((player) => (
         <p key={player.id}>{player.name}</p>
       ))}
-      {/* below is our for for the flavor drop down */}
+      {/* below is our form for the player drop down */}
       <form onSubmit={handleSubmit}>
         <select onChange={handleChange} defaultValue='default'>
           {/* we can set a default value to tell people to select a player*/}
@@ -46,7 +46,7 @@ export default function TeamDetail(props) {
           </option>
           {/* now we loop over all players and return an <option> tag for each */}
 
-          {players.map((player) => (
+          {players?.map((player) => (
             // we track the player's id as the "value" which will get added to state onChange
             // the player's name goes between the open and close tag which is what the user sees
             <option value={player.id}>{player.name}</option>

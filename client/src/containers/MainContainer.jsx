@@ -8,6 +8,7 @@ import Teams from '../screens/Teams';
 import TeamCreate from '../screens/TeamCreate';
 import TeamEdit from '../screens/TeamEdit';
 import TeamDetail from '../screens/TeamDetail';
+import HomePage from '../screens/homepage/HomePage';
 
 export default function MainContainer(props) {
   const [teams, setTeams] = useState([]);
@@ -65,7 +66,7 @@ export default function MainContainer(props) {
           <TeamCreate handleCreate={handleCreate} />
         </Route>
         <Route path='/teams/:id'>
-          <TeamDetail teams={teams} />
+          <TeamDetail players={players} />
         </Route>
         <Route path='/teams'>
           <Teams
@@ -74,6 +75,12 @@ export default function MainContainer(props) {
             currentUser={currentUser}
           />
         </Route>
+
+        <Route path='/'>
+          <HomePage />
+        </Route>
+
+
       </Switch>
     </div>
   );
