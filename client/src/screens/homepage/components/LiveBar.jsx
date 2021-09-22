@@ -5,8 +5,10 @@ export default function LiveBar() {
   return (
     <div>
       <div>
-        
+
+        <div>
         <p>MLB</p>
+        </div>
 
         <div>
           <div>
@@ -26,7 +28,9 @@ export default function LiveBar() {
       </div>
       <div>
         
+        <div>
         <p>NFL</p>
+        </div>
 
         <div>
           <div>
@@ -45,8 +49,10 @@ export default function LiveBar() {
       
       </div>
       <div>
-        
+
+        <div>
         <p>MLS</p>
+        </div>
 
         <div>
           <div>
@@ -65,8 +71,11 @@ export default function LiveBar() {
       
       </div>
 
-      <div>  
+      <div>
+
+        <div>
         <p>NBA</p>
+        </div>
 
         <div>
           <div>
@@ -82,6 +91,7 @@ export default function LiveBar() {
             <p>ATL - 9</p>
           </div>
         </div>
+        
       </div>
     </div>
   )
