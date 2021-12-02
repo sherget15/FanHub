@@ -1,0 +1,81 @@
+.liveBar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+}
+
+.mlbContainer {
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 40px;
+}
+
+.mlbHeader {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.mlbScoresCont {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.nflContainer {
+    background-color: rosybrown;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 40px;
+}
+
+.nflHeader {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.nflScoresCont {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.mlsContainer {
+    background-color: seagreen;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 40px;
+}
+
+.mlsHeader {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.mlsScoresCont {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.nbaContainer {
+    background-color: steelblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 40px;
+}
+
+.nbaHeader {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.nbaScoresCont {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
